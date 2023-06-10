@@ -120,40 +120,38 @@ ul {
   margin-bottom: 10px;
 }
 
-.btn-linkedin {
+.btnAction {
+  width: 180px;
+  margin: 10px 0;
+  color: #fff;
+  border-radius: 10px;
+  font-family: Arial;
+}
+
+#btnLinkedin {
   background: #0E76A8;
-  border-radius: 0;
-  color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #084461;
 }
-.btn-linkedin:link, .btn-linkedin:visited {
-  color: #fff;
-}
-.btn-linkedin:active, .btn-linkedin:hover {
+
+#btnLinkedin:active, #btnLinkedin:hover {
   background: #084461;
   color: #fff;
 }
 
-.btn-email:active, .btn-email:hover {
-  background:  #035b30;
+#btnTelegram {
+  background:#27A5E7;
+}
+#btnTelegram:active, #btnTelegram:hover {
+  background:#1f83b9;
   color: #fff;
 }
 
-.btn-email {
-  background-color: #038244; /* Green */
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 22px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  font-family: Arial; border-radius: 20px; text-decoration: none;
+#btnEmail {
+  background-color: #038244;
+}
+
+#btnEmail:active, #btnEmail:hover {
+  background:  #035b30;
+  color: #fff;
 }
 
 iframe {
@@ -163,4 +161,8 @@ iframe {
 
 section {
   min-height: 100vh;
+}
+
+.fa-sun {
+  color: white;
 }
