@@ -12,6 +12,10 @@ body {
   font-family: OpenSans, Arial, Helvetica, sans-serif;
 }
 
+h1 {
+  margin-bottom: 20px;
+}
+
 a {
   text-decoration: none;
 }
@@ -51,8 +55,16 @@ footer a {
 
 .about-image {
   padding: 0;
+  border: 1px solid #007bff;
+}
+
+.about-image:hover {
+  background-color: #007bff;
   border: 0;
-  background-color: #222;
+}
+
+.btn {
+  border-radius: 3px;
 }
 
 /* Skills */
@@ -86,7 +98,7 @@ footer a {
   height: 0;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-right: 8px solid #038244; /* Green color */
+  border-right: 8px solid #007bff;
 }
 
 .skills-list li {
@@ -95,37 +107,19 @@ footer a {
 
 /* CTA */
 
-.btnAction {
-  width: 180px;
-  margin: 10px 0;
-  color: #fff;
-  border-radius: 10px;
-}
-
-#btnLinkedin {
-  background: #0E76A8;
+.btn-cta{
+  width: 200px;
+  margin: 13px 0;
 }
 
 #btnLinkedin:active, #btnLinkedin:hover {
-  background: #084461;
-  color: #fff;
+  border-color: #0E76A8;
+  background: #0E76A8;
 }
 
-#btnTelegram {
-  background:#27A5E7;
-}
 #btnTelegram:active, #btnTelegram:hover {
-  background:#1f83b9;
-  color: #fff;
-}
-
-#btnEmail {
-  background-color: #038244;
-}
-
-#btnEmail:active, #btnEmail:hover {
-  background:  #035b30;
-  color: #fff;
+  border-color:#27A5E7;
+  background:#27A5E7;
 }
 
 /* Dark theme styles */
@@ -164,10 +158,6 @@ body.dark-theme footer {
 
 body.dark-theme footer a {
   color: #ffffff;
-}
-
-body.dark-theme .about-image {
-  background-color: #ffffff;
 }
 
 /* navbar */
