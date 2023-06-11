@@ -8,14 +8,14 @@
   <!-- Bootstrap CSS Link -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- Custom CSS for Theme -->
-  <link rel="stylesheet" href="./assets/styles.css?v=1.0.0">
+  <link rel="stylesheet" href="./assets/styles.css?v=1.0.5">
   <!-- FontAwesome CSS Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <!-- Font Awesome CDN -->
   <script src="https://use.fontawesome.com/3f496d6fbb.js"></script>
 </head>
 <body>
-  <header>
+  <header class="header">
     <!-- Navigation Menu -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="/">
@@ -56,102 +56,129 @@
     </nav>
   </header>
 
-  <main class="container" style="padding-top: 10%;">
-    <section id="summary">
-      <h2 style="font-size: 150%;">Hi, my name is</h2>
-      <h1 style="font-size: 500%; font-weight: bold;">Katerina Gloaguen.</h1>
-      <h3 style="font-size: 400%; font-weight: 600;">I build things for the web.</h3>
-      <p>I’m a software engineer specializing in building exceptional <br> digital experiences. Currently, I’m focused on building <br> accessible, human-centered products.</p>
-      <a style="display: block; width: 250px; background: #038244;
-        color: #ffffff; text-align: center; font-size: 130%; padding: 15px;
-        font-family: Arial; border-radius: 10px; text-decoration: none;" href="#projects">Check out my projects!</a>
-    </section>
+  <main class="container-fluid">
 
-    <section id="about" class="row">
-      <div class="col-md-8">
-        <div class="about-content">
-          <h2>About Me</h2>
-          <p>I have a degree in natural sciences and programming experience <br>in PHP, HTML, Javascript, CSS, Bootstrap and SQL.</p>
-          <!-- Add more text or content here -->
-        </div>
-      </div>
-      <div class="col-md-4">
-        <img src="./images/my_image-wbg.png" alt="About Me Image" class="about-image img-fluid">
-      </div>
-    </section>
-
-    <section id="skills">
-      <h4 style="padding-bottom: 30px;">Here are a few technologies I’ve been working with recently:</h4>
-      <div class="skills-grid">
-        <div class="skills-column">
-          <ul class="skills-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>PostgreSQL/MySQL</li>
-            <li>PHP 8+</li>
-            <!-- Add your skills here -->
-          </ul>
-        </div>
-        <div class="skills-column">
-          <ul class="skills-list">
-            <li>Laravel 10</li>
-            <li>Symfony 6</li>
-            <li>Git</li>
-            <li>WordPress</li>
-            <li>Python</li>
-            <!-- Add your skills here -->
-          </ul>
+    <section id="summary" class="panel home" data-section-name="summary">
+      <div class="inner">
+        <div class="vertical-center" style="text-align: left;">
+          <h2 style="font-size: 150%;">Hi, my name is</h2>
+          <h1 style="font-size: 500%; font-weight: bold;">Katerina Gloaguen.</h1>
+          <h3 style="font-size: 400%; font-weight: 600;">I build things for the web.</h3>
+          <p>
+            I’m a software engineer specializing in building exceptional <br>
+            digital experiences. Currently, I’m focused on building <br>
+            accessible, human-centered products.<br><br>
+          </p>
+          <a style="background: #038244; margin-top: 10px;
+            color: #ffffff; font-size: 130%; padding: 15px;
+            font-family: Arial; border-radius: 10px; text-decoration: none;" href="#projects">Check out my projects!</a>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="col-12">
-      <h2 class="text-center">Some Things I’ve Built</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Recipe Website</h5>
-              <p class="card-text">Partie client</p>
-                <iframe src="https://www.youtube.com/embed/D8xJjblk3zQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              <a href="#" class="btn btn-primary">View Project</a>
+    <section id="about" class="panel" data-section-name="about">
+      <div class="inner">
+        <div class="vertical-center">
+          <div class="col-md-8" style="float: left; text-align: left;">
+            <div class="about-content">
+              <h2>About Me</h2>
+              <p>I have a degree in natural sciences and programming experience <br>in PHP, HTML, Javascript, CSS, Bootstrap and SQL.</p>
+              <!-- Add more text or content here -->
             </div>
           </div>
+          <div class="col-md-4" style="float: left;">
+            <img src="./images/my_image-wbg.png" alt="About Me Image" class="about-image img-fluid img-thumbnail">
+          </div>
+          <div class="clearfix"></div>
         </div>
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Recipe Website</h5>
-              <p class="card-text">Partie admin </p>
-                <iframe src="https://www.youtube.com/embed/692kvPmqnTg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              <a href="#" class="btn btn-primary">View Project</a>
+      </div>
+    </section>
+
+    <section id="skills" class="panel" data-section-name="skills">
+      <div class="inner">
+        <div class="vertical-center">
+          <h4 style="padding-bottom: 30px;">Here are a few technologies I’ve been working with recently:</h4>
+          <div class="skills-grid">
+            <div class="skills-column">
+              <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PostgreSQL/MySQL</li>
+                <li>PHP 8+</li>
+                <!-- Add your skills here -->
+              </ul>
+            </div>
+            <div class="skills-column">
+              <ul class="skills-list">
+                <li>Laravel 10</li>
+                <li>Symfony 6</li>
+                <li>Git</li>
+                <li>WordPress</li>
+                <li>Python</li>
+                <!-- Add your skills here -->
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact">
-      <div class="text-center">
-        <h1>Get In Touch</h1>
-        <p>
-          Whether you have a question or just want to say hi, I’ll try my best to get back to you!
-        </p>
-        <div class="col-12">
-          <a id="btnEmail" class="btn btnAction btn-lg" href="mailto:ek.gloaguen.vasileva@icloud.com">
-            <i class="fa fa-envelope fa-fw"></i> Email me
-          </a>
+    <section id="projects" class="panel panel3" data-section-name="projects">
+      <div class="inner">
+        <div class="vertical-center">
+          <h2 class="text-center" style="margin-bottom: 20px;">Some Things I’ve Built</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Recipe Website</h5>
+                  <p class="card-text">Partie client</p>
+                    <iframe src="https://www.youtube.com/embed/D8xJjblk3zQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Recipe Website</h5>
+                  <p class="card-text">Partie admin </p>
+                    <iframe src="https://www.youtube.com/embed/692kvPmqnTg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
         </div>
-        <div class="col-12">
-          <a id="btnLinkedin" class="btn btnAction btn-lg" href="https://www.linkedin.com/in/ekaterina-gloaguen/" title="LinkedIn">
-            <i class="fa fa-linkedin fa-fw"></i> LinkedIn
-          </a>
+      </div>
+    </section>
+
+    <section id="contact" class="panel panel4" data-section-name="contact">
+      <div class="inner">
+        <div class="vertical-center">
+          <div class="text-center">
+            <h1>Get In Touch</h1>
+            <p>
+              Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+            </p>
+            <div class="col-12">
+              <a id="btnEmail" class="btn btnAction btn-lg" href="mailto:ek.gloaguen.vasileva@icloud.com">
+                <i class="fa fa-envelope fa-fw"></i> Email me
+              </a>
+            </div>
+            <div class="col-12">
+              <a id="btnLinkedin" class="btn btnAction btn-lg" href="https://www.linkedin.com/in/ekaterina-gloaguen/" title="LinkedIn">
+                <i class="fa fa-linkedin fa-fw"></i> LinkedIn
+              </a>
+            </div>
+            <div class="col-12">
+              <a id="btnTelegram" class="btn btnAction btn-lg" href="https://telegram.im/@katerina_gloaguen" title="Telegram">
+                <i class="fa fa-telegram fa-fw"></i> Telegram
+              </a>
+          </div>
         </div>
-        <div class="col-12">
-          <a id="btnTelegram" class="btn btnAction btn-lg" href="https://telegram.im/@katerina_gloaguen" title="Telegram">
-            <i class="fa fa-telegram fa-fw"></i> Telegram
-          </a>
       </div>
     </section>
   </main>
@@ -161,12 +188,14 @@
 
   <!-- jQuery Script -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Scrollify -->
+  <script src="./assets/jquery.scrollify.js?v=1.0.0"></script>
   <!-- Bootstrap and JavaScript Scripts -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!-- Custom JavaScript for Theme Switching -->
-  <script src="./assets/script.js?v=1.0.0"></script>
+  <script src="./assets/script.js?v=1.0.1"></script>
 </body>
-<footer>
+<footer class="footer">
   <div class="container-fluid">
     <div class="text-center">
       <a href="https://github.com/DragonNero" style="text-decoration: none;">
