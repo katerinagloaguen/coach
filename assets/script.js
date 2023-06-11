@@ -1,4 +1,6 @@
 jQuery(function() {
+    console.log('If you are seeing this, the errors you are seeing come from YouTube');
+
     // scrollify
     $.scrollify({
       section: ".panel",
