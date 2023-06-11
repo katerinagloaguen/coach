@@ -10,6 +10,7 @@ body {
   color: #000000;
   overflow: hidden;
   font-family: OpenSans, Arial, Helvetica, sans-serif;
+  font-size: 110%;
 }
 
 h1 {
@@ -33,7 +34,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px;
+  height: 130px;
   background-color: #f8f9fa;
   color: #000000;
   padding-bottom: 0;
@@ -134,12 +135,12 @@ body.dark-theme {
 }
 
 body.dark-theme .card {
-  background-color: #424242;
+  background-color: inherit;
   color: #ffffff;
 }
 
 body.dark-theme .navbar {
-  background-color: #343a40 !important;
+  background-color: #424a52 !important;
 }
 
 body.dark-theme .navbar-brand {
@@ -152,7 +153,7 @@ body.dark-theme .navbar-toggler-icon {
 }
 
 body.dark-theme footer {
-  background-color: #343a40;
+  background-color: #424a52;
   color: #ffffff;
 }
 
