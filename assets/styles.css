@@ -96,6 +96,33 @@ footer p {
   margin-top: 15px;
 }
 
+.arrow-container {
+  width: 100%;
+  text-align: center;
+  height: 100px;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#ctaDown {
+  color: #007bff;
+  position: absolute;
+  bottom: 1%;
+  font-size: 300%;
+  transform: translate(-50%, -50%);
+  animation: moveUpDown 2s infinite;
+}
+
 /* Skills */
 
 .skills-grid {
