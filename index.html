@@ -8,7 +8,7 @@
   <!-- Bootstrap CSS Link -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- Custom CSS for Theme -->
-  <link rel="stylesheet" href="./assets/styles.css?v=1.0.8">
+  <link rel="stylesheet" href="./assets/styles.css?v=1.0.9">
   <!-- FontAwesome CSS Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <!-- Font Awesome CDN -->
@@ -60,35 +60,33 @@
 
     <section id="summary" class="panel home" data-section-name="summary">
       <div class="inner">
-        <div class="vertical-center" style="text-align: left;">
-          <h2 style="font-size: 125%;">Hello, my name is</h2>
-          <h2 style="font-size: 600%; font-weight: bold;">Katerina Gloaguen</h2>
-          <h2 style="font-size: 300%; font-weight: 600;">Weaving magic into the web</h2>
+        <div class="vertical-center text-left">
+          <h2 id="hello">Hello, my name is</h2>
+          <h2 id="name">Katerina Gloaguen</h2>
+          <h2 id="catch">Weaving magic into the web</h2>
           <p>Software Engineer | Crafting Exceptional Digital Solutions</p>
           <p>Dedicated to accessibility and user-centered design.</p>
-          <a class="btn btn-outline-primary" href="#projects" style="font-size: 130%; padding: 15px 35px;margin-top: 15px;">Check out my projects!</a>
+          <a id="btnProjects" class="btn btn-outline-primary" href="#projects">Check out my projects!</a>
         </div>
       </div>
     </section>
 
     <section id="about" class="panel" data-section-name="about">
       <div class="inner">
-        <div class="vertical-center">
-          <div class="col-md-8" style="float: left; text-align: left;">
+        <div class="vertical-center text-left row">
+          <div class="col-md-8">
             <div class="about-content">
               <h1>About Me</h1>
               <p>
-                Driven by curiosity and armed with a degree in natural sciences and a master in cognitive sciences,<br/>
-                I bring a unique perspective to my work as a software engineer.<br/>
-                With a versatile skill set encompassing PHP, JavaScript, mySQL, HTML, CSS and various frameworks<br/>
-                I have a solid foundation in building robust and dynamic web applications.<br/>
-                I thrive on tackling complex challenges and transforming ideas into elegant, user-friendly solutions.<br/>
-                My relentless pursuit of knowledge and passion for cutting-edge technologies ensure that I stay at the forefront of the ever-evolving digital landscape.
+               I am driven by curiosity and armed with a degree in natural sciences and a master in cognitive sciences.<br/>
+                Equipped with expertise in PHP, JavaScript, mySQL, HTML, CSS, and frameworks, I build strong and dynamic web applications. <br/>
+                I excel at solving intricate problems and creating user-friendly solutions. <br/>
+                My thirst for knowledge and fascination with modern technologies keep me ahead in the ever-changing digital world.
               </p>
               <!-- Add more text or content here -->
             </div>
           </div>
-          <div class="col-md-4" style="float: left;">
+          <div class="col-md-4">
             <img src="./images/my_image-wbg.png" alt="About Me Image" class="about-image img-fluid img-thumbnail">
           </div>
           <div class="clearfix"></div>
@@ -126,7 +124,7 @@
       </div>
     </section>
 
-    <section id="projects" class="panel panel3" data-section-name="projects">
+    <section id="projects" class="panel" data-section-name="projects">
       <div class="inner">
         <div class="vertical-center">
           <h1 class="text-center">Some Things I've Built</h1>
@@ -154,7 +152,7 @@
       </div>
     </section>
 
-    <section id="contact" class="panel panel4" data-section-name="contact">
+    <section id="contact" class="panel" data-section-name="contact">
       <div class="inner">
         <div class="vertical-center">
           <div class="text-center">
@@ -197,7 +195,7 @@
 <footer class="footer">
   <div class="container-fluid">
     <div class="text-center">
-      <a href="https://github.com/DragonNero" style="text-decoration: none;">
+      <a href="https://github.com/DragonNero">
         <div>
           Designed &amp; Built by Katerina Gloaguen ©<span id="copyright"> <script>$('#copyright').text(new Date().getFullYear());</script> </span>
         </div>

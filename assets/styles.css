@@ -68,6 +68,27 @@ footer a {
   border-radius: 3px;
 }
 
+.text-left {
+  text-align: left;
+}
+
+#hello {
+  font-size: 125%;
+}
+#name {
+  font-size: 600%;
+  font-weight: bold;
+}
+#catch {
+  font-size: 300%;
+  font-weight: 600;
+}
+#btnProjects {
+  font-size: 130%;
+  padding: 15px 35px;
+  margin-top: 15px;
+}
+
 /* Skills */
 
 .skills-grid {
@@ -250,7 +271,27 @@ body.dark-theme .pagination a {
 }
 
 @media (max-width:800px) {
+  body {
+    font-size: 100%;
+  }
+  #hello {
+    font-size: 110%;
+  }
+  #name {
+    font-size: 325%;
+    font-weight: bolder;
+  }
+  #catch {
+    font-size: 150%;
+    font-weight: 600;
+  }
+  #btnProjects {
+    font-size: 110%;
+  }
   .inner {
     width:70%;
+  }
+  .skills-column {
+    padding: 0;
   }
 }
