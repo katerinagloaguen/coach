@@ -44,9 +44,15 @@ footer {
 footer a {
   color: #000000;
 }
+footer p {
+  margin-bottom: 0;
+}
 
 .container-fluid {
   padding: 0;
+}
+.btnYoutube {
+  margin-top: 5px;
 }
 
 .card {
@@ -272,7 +278,7 @@ body.dark-theme .pagination a {
 
 @media (max-width:800px) {
   body {
-    font-size: 100%;
+    font-size: 80%;
   }
   #hello {
     font-size: 110%;
