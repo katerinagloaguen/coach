@@ -300,4 +300,10 @@ body.dark-theme .pagination a {
   .skills-column {
     padding: 0;
   }
+  .hover-text {
+    display: none !important;
+  }
+  .about-content p {
+    font-size: smaller;
+  }
 }
