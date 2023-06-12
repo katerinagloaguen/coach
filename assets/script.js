@@ -41,6 +41,31 @@ jQuery(function() {
         themeIcon.addClass('fa-moon');
       }
     });
+
+    // Event handler for the lang switch
+    $('#langToggle').click(function() {
+      let $langBtn = $(this);
+      let currentLang = $langBtn.data('lang');
+      let newLang = (currentLang === 'en' ? 'fr' : 'en');
+      $.getJSON('./lang/' + newLang + '.json', function(data) {
+        $('[lang-tag]').each(function () {
+          let $element = $(this);
+          let langTag = $element.attr('lang-tag');
+          $element.html(data[langTag]);
+        });
+        $langBtn.data('lang', newLang);
+        $('html').attr('lang', newLang);
+        if (newLang === 'en') {
+          $langBtn.find('img').attr('src', './images/france.png');
+        } else {
+          $langBtn.find('img').attr('src', './images/uk.jpg');
+        }
+      }).fail(function(){
+        console.log('Could not load lang file');
+      });
+    });
+
+    $('#copyright').text('©' + new Date().getFullYear());
   });
 
 

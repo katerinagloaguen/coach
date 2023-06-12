@@ -2,6 +2,6 @@
 
 ## TODO:
 - img background or change
-- french version
-- code cleanup
 - metadata
+- code cleanup
+- check can't access file structure
