@@ -29,6 +29,10 @@ jQuery(function() {
       }
     });
 
+    $('.navbar-toggler').click(function () {
+      $.scrollify.update();
+    });
+
     // Event handler for the theme switch
     $('#themeToggle').click(function() {
       $('body').toggleClass('dark-theme');
