@@ -96,6 +96,10 @@ footer p {
   margin-top: 15px;
 }
 
+#navbarNav {
+  padding-bottom: 10px;
+}
+
 .arrow-container {
   width: 100%;
   text-align: center;
