@@ -1,6 +1,7 @@
 {
     "navbar_lang": "English",
-    "navbar_theme": "Mode Nuit",
+    "navbar_theme_dark": "Mode Nuit",
+    "navbar_theme_light": "Mode Jour",
     "navbar_summary": "Accueil",
     "navbar_about": "À propos",
     "navbar_skills": "Compétences",

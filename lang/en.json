@@ -1,6 +1,7 @@
 {
     "navbar_lang": "Français",
-    "navbar_theme": "Dark Mode",
+    "navbar_theme_dark": "Dark Mode",
+    "navbar_theme_light": "Light Mode",
     "navbar_summary": "Summary",
     "navbar_about": "About",
     "navbar_skills": "Skills",
