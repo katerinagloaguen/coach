@@ -31,7 +31,7 @@ jQuery(function() {
       $.scrollify.update();
     });
     $('#ctaDown').on('click', function () {
-      $.scrollify.move(2);
+      $.scrollify.move(1);
     });
 
     // Event handler for the theme switch
