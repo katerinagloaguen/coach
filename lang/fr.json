@@ -1,8 +1,12 @@
 {
+    "navbar_lang": "English",
+    "navbar_theme": "Mode Nuit",
+    "navbar_summary": "Accueil",
     "navbar_about": "À propos",
     "navbar_skills": "Compétences",
     "navbar_projects": "Projets",
     "navbar_contact": "Contact",
+    "download_resume": "Téléchargez Mon CV",
     "summary_hello": "Bonjour, je m'appelle",
     "summary_catch": "Je réalise des projets web",
     "summary_engineer": "Ingénieur logiciel | Créatrice de solutions numériques",

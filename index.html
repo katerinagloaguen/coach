@@ -36,52 +36,63 @@
   <!-- Bootstrap CSS Link -->
   <link rel="stylesheet" href="./assets/bootstrap.min.css">
   <!-- Custom CSS for Theme -->
-  <link rel="stylesheet" href="./assets/styles.css?v=1.0.13">
+  <link rel="stylesheet" href="./assets/styles.css?v=1.1.0">
   <!-- FontAwesome CSS Link -->
   <link rel="stylesheet" href="./assets/font-awesome.all.min.css">
 </head>
 <body>
+  <a id="logo" href="#">
+    <img src="./images/logo.png" alt="logo" width="60px" height="60px">
+  </a>
 
-  <header class="header">
-    <!-- Navigation Menu -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#" style="padding: 15px;">
-        <img src="./images/logo.png" alt="logo" width="60px" height="60px">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a id="langToggle" class="nav-link" href="#" data-lang="en">
-              <img src="./images/france.png" alt="language image" />
-            </a>
-          </li>
-          <li class="nav-item">
-            <a id="themeToggle" class="nav-link" href="#">
-              <span class="fa fa-moon"></span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about" lang-tag="navbar_about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills" lang-tag="navbar_skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects" lang-tag="navbar_projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact" lang-tag="navbar_contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a href="resume/CV_K_Gloaguen_english.pdf" class="btn btn-outline-primary" download="CV_K_Gloaguen">Resume</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+  <!-- Navigation -->
+  <ul class="sideActions">
+    <li>
+      <ul class="actions">
+        <li>
+          <a id="langToggle" href="#" data-lang="en">
+            <img src="./images/france.png" alt="language image" />
+            <span class="hover-text" lang-tag="navbar_lang">Français</span>
+          </a>
+        </li>
+        <li>
+          <a id="themeToggle" href="#">
+            <span class="fa fa-moon"></span>
+            <span class="hover-text" lang-tag="navbar_theme">Dark Mode</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <ul class="pagination">
+        <li>
+          <a class="" href="#summary">
+            <span class="hover-text" lang-tag="navbar_summary">Summary</span>
+          </a>
+        </li>
+        <li>
+          <a class="" href="#about">
+            <span class="hover-text" lang-tag="navbar_about">About</span>
+          </a>
+        </li>
+        <li>
+          <a class="" href="#skills">
+            <span class="hover-text" lang-tag="navbar_skills">Skills</span>
+          </a>
+        </li>
+        <li>
+          <a class="" href="#projects">
+            <span class="hover-text" lang-tag="navbar_projects">Projects</span>
+          </a>
+        </li>
+        <li>
+          <a class="" href="#contact">
+            <span class="hover-text" lang-tag="navbar_contact">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
 
   <main class="container-fluid">
     <!-- Summary Section -->
@@ -93,6 +104,8 @@
           <h2 id="catch" lang-tag="summary_catch">Weaving magic into the web</h2>
           <p lang-tag="summary_engineer">Software Engineer | Crafting Exceptional Digital Solutions</p>
           <p lang-tag="summary_dedicated">Dedicated to accessibility and user-centered design.</p>
+           <!-- Todo when changing lang change pdf version -->
+          <a href="resume/CV_K_Gloaguen_english.pdf" class="btn btn-outline-primary btn-lg" download="CV_K_Gloaguen" lang-tag="download_resume">Download My Resume</a>
         </div>
         <div class="arrow-container">
           <i id="ctaDown" class="fa fa-long-arrow-down"></i>
@@ -240,5 +253,5 @@
 <!-- Font Awesome js -->
 <script src="./assets/fontawesome.js"></script>
 <!-- Custom JavaScript for Theme Switching -->
-<script src="./assets/script.js?v=1.0.4"></script>
+<script src="./assets/script.js?v=1.0.5"></script>
 </html>

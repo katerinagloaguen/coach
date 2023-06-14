@@ -1,8 +1,12 @@
 {
+    "navbar_lang": "Français",
+    "navbar_theme": "Dark Mode",
+    "navbar_summary": "Summary",
     "navbar_about": "About",
     "navbar_skills": "Skills",
     "navbar_projects": "Projects",
     "navbar_contact": "Contact",
+    "download_resume": "Download My Resume",
     "summary_hello": "Hello, my name is",
     "summary_catch": "Weaving magic into the web",
     "summary_engineer": "Software Engineer | Crafting Exceptional Digital Solutions",
