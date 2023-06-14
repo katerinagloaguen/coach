@@ -337,4 +337,7 @@ body.dark-theme .pagination a, body.dark-theme .actions a {
   .about-content p {
     font-size: smaller;
   }
+  .btn-xs-block  {
+    width: 100%;
+  }
 }
