@@ -28,13 +28,15 @@ jQuery(function() {
         $(".pagination a").on("click", $.scrollify.move);
       }
     });
-
-    $('.navbar-toggler').click(function () {
+    $('.navbar-toggler').on('click', function () {
       $.scrollify.update();
+    });
+    $('#ctaDown').on('click', function () {
+      $.scrollify.move(2);
     });
 
     // Event handler for the theme switch
-    $('#themeToggle').click(function() {
+    $('#themeToggle').on('click', function() {
       $('body').toggleClass('dark-theme');
       let themeIcon = $('#themeToggle span.fa');
       if ($('body').hasClass('dark-theme')) {
@@ -47,7 +49,7 @@ jQuery(function() {
     });
 
     // Event handler for the lang switch
-    $('#langToggle').click(function() {
+    $('#langToggle').on('click', function() {
       let $langBtn = $(this);
       let currentLang = $langBtn.data('lang');
       let newLang = (currentLang === 'en' ? 'fr' : 'en');

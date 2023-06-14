@@ -100,6 +100,9 @@ footer p {
   padding-bottom: 10px;
 }
 
+#ctaDown {
+  cursor: pointer;
+}
 .arrow-container {
   width: 100%;
   text-align: center;
