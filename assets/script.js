@@ -66,8 +66,10 @@ jQuery(function() {
       $('html').attr('lang', newLang);
       if (newLang === 'en') {
         $langBtn.find('img').attr('src', './images/france.png');
+        $('#resumeLink').attr('href', 'resume/CV_K_Gloaguen_en.pdf');
       } else {
         $langBtn.find('img').attr('src', './images/uk.jpg');
+        $('#resumeLink').attr('href', 'resume/CV_K_Gloaguen_fr.pdf');
       }
     });
 
