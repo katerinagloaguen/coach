@@ -79,6 +79,10 @@ footer p {
   text-align: left;
 }
 
+.text-center {
+  text-align: center;
+}
+
 #hello {
   font-size: 125%;
 }
