@@ -353,4 +353,8 @@ body.dark-theme .pagination a, body.dark-theme .actions a {
   .btn-xs-block  {
     width: 100%;
   }
+  .stripeContainer {
+    padding: 0;
+    margin-left: -16px;
+  }
 }
