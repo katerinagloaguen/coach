@@ -311,6 +311,15 @@ body.dark-theme .pagination a, body.dark-theme .actions a {
   bottom:0;
 }
 
+@media (min-width:800px) {
+  #pricing .pricing-info {
+    margin-bottom: 30px;
+  }
+  #pricing .goal-statement {
+    margin-top: 30px;
+  }
+}
+
 @media (max-width:800px) {
   body {
     font-size: 80%;
